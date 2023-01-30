@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Trades</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-superior">
+                <p>OR TRADES</p>
+                <ul>
+                    <li><a href="./login.html">Login</a></li>
+                    <li><a href="./registrarse.html">Registrarse</a></li>
+                </ul>
+            </div>
+            <div class="nav-inferior">
+                <img src="../img/logo3.JPG" alt="Home" class="logo">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./registro_trades.html">Registrar Trades</a></li>
+                    <li><a href="./educacion.html">Educación</a></li>
+                    <li><a href="./contactenos.html">Contáctenos</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="contenedor-registro-trades">
+        <h1>Formulario de Registro de Trades</h1>
+        <form action="">
+            <section>
+                <h2>Información General</h2>
+                <div>
+                    <div>
+                        <label for="number-trade">Trade N°</label>
+                        <input type="number" id="number-trade" name="number-trade">
+                    </div>
+                    <div>
+                        <label for="date">Fecha</label>
+                        <input type="date" id="date" name="date">
+                    </div>
+                    <div>
+                        <label for="ticker">Ticker - activo</label>
+                        <select name="" id="ticker">
+                            <option value="ticker1">SPY</option>
+                            <option value="ticker2">QQQ</option>
+                            <option value="ticker3">IWM</option>
+                            <option value="ticker4">DIA</option>
+                            <option value="ticker5">AAPL</option>
+                            <option value="ticker6">MSFT</option>
+                            <option value="ticker7">AMD</option>
+                            <option value="ticker8">AMZN</option>
+                            <option value="ticker9">BA</option>
+                            <option value="ticker10">BAC</option>
+                            <option value="ticker11">GOOGL</option>
+                            <option value="ticker12">JPM</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="expiration">Vencimiento Contrato</label>
+                        <input type="date" id="expiration" name="expiration">
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>Información Estrategia</h2>
+                <div>
+                    <div>
+                        <label for="estrategy-name">Nombre Estrategia</label>
+                        <select name="" id="">
+                            <option value="">BPCE</option>
+                            <option value="">BCCE</option>
+                            <option value="">Naked PUT</option>
+                            <option value="">Iron Condor</option>
+                            <option value="">Straddle</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="contracts-number">N° Contratos</label>
+                        <input type="number" id="contracts-number" name="contracts-number">
+                    </div>
+                    <div>
+                        <label for="delta-call">Delta Short Call</label>
+                        <input type="number" id="delta-call" name="delta-call">
+                    </div>
+                    <div>
+                        <label for="delta-put">Delta Short Put</label>
+                        <input type="number" id="delta-put" name="delta-put">
+                    </div>
+                    <div>
+                        <label for="strike-long-call">Strike Long Call</label>
+                        <input type="number" id="strike-long-call" name="strike-long-call" placeholder="$">
+                    </div>
+                    <div>
+                        <label for="strike-short-call">Strike Short Call</label>
+                        <input type="number" id="strike-short-call" name="strike-short-call" placeholder="$">
+                    </div>
+                    <div>
+                        <label for="strike-long-put">Strike Long Put</label>
+                        <input type="number" id="strike-long-put" name="strike-long-put" placeholder="$">
+                    </div>
+                    <div>
+                        <label for="strike-short-put">Strike Short Put</label>
+                        <input type="number" id="strike-short-put" name="strike-short-put" placeholder="$">
+                    </div>
+                    <div>
+                        <label for="prime">Valor Prima - Contrato</label>
+                        <input type="number" id="prime" name="prime" placeholder="$">
+                    </div>
+                    <div>
+                        <label for="risk">Riesgo de la Posición</label>
+                        <input type="number" id="risk" name="risk" placeholder="$">
+                    </div>
+                    <div>
+                        <label for="roi">ROI Esperado</label>
+                        <input type="number" id="roi" name="roi" placeholder="%">
+                    </div>
+                </div>
+                    
+            </section>
+            <section>
+                <h2>Información Opcional</h2>
+                <div>
+                    <div>
+                        <label for="probability">POP</label>
+                        <input type="number" id="probability" name="probability" placeholder="%">
+                    </div>
+                    <div>
+                        <label for="delta-position">Delta Posición</label>
+                        <input type="number" id="delta-position" name="delta-position">
+                    </div>
+                    <div>
+                        <label for="theta-position">Theta Posición</label>
+                        <input type="number" id="theta-position" name="theta-position">
+                    </div>
+                    <div>
+                        <label for="volatility-range">IVR</label>
+                        <input type="number" id="volatility-range" name="volatility-range" placeholder="% volatility range">
+                    </div>
+                    <div>
+                        <label for="volatility-percentile">IVP</label>
+                        <input type="number" id="volatility-percentile" name="volatility-percentile" placeholder="% volatility percentile">
+                    </div>
+                </div> 
+            </section>
+            <div>
+                <input class="botones" type="submit" value="Registrar">
+            </div>
+        </form>      
+        <section>
+            <p>
+                <span>Importante:</span> Tener presente que está bitácora ha sido creada para registrar operaciones sobre OPCIONES, ya sea sobre acciones o indices, no se recomienda su uso para registrar operaciones básicas sobre acciones, futuros o Forex.
+                Para saber a que hace referencia cada uno de los campos del presente formulario, puedes descargar nuestro manual <a href="">aquí</a>.
+            </p>
+        </section>  
+    </main>
+    <footer>
+        <ul>
+            <li><a href="">Acerca de nosotros</a></li>
+            <li><a href="">Contactenos</a></li>
+            <li><a href="">Politica de Privacidad</a></li>
+        </ul>
+        <div>
+            <p>Siguenos en:</p>
+            <a href="https://www.instagram.com/" target="_blank"><img src="../img/icons8-instagram-60.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="../img/icons8-facebook-60.png" alt="Facebook"></a>
+            <a href="https://www.youtube.com/" target="_blank"><img src="../img/icons8-youtube-play-60.png" alt="Youtube"></a>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.355671182092!2d-75.5672397257697!3d6.216739226653719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429df1e8c7faf%3A0x1b630ea0dda803c4!2sEdificio%2035%20Palms!5e0!3m2!1ses!2sco!4v1671738740761!5m2!1ses!2sco" width="150" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </footer>
+</body>
+</html>
