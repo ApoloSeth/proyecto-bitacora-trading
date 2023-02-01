@@ -3,37 +3,49 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+:root{
+    --color-title:#1d1a16;
+    --color-p-subtit:#787878;
+    --bg-subtititles:#e4e8eb;
+    --yellow-gold:#d8ba8e;
+    --border:#9e9e9e;
+    --white: #ffffff;
+    --black: #000000;
+    --color-buttom: #00ADB5;
+    --bg-nav:#323b42;
+    --sm:16px;
+    --md:18px;
+    --lg:22px;
+    --h1:26px;
+}
 /* -----------------Estilos generales------------- */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
-/* font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,600;1,700;1,800&display=swap');
 /* font-family: 'Poppins', sans-serif; */
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .botones {
     width: min-content;
     height: 35px;
-    background-color: #00ADB5;
-    color: white;
+    background-color: var(--color-buttom);
+    color: var(--white);
     padding: 8px 10px;
-    font-weight: 500;
-    font-size: 16px;
+    font-size: var(--sm);
     border: none;
-    transition: 0.5s ease;
+    transition: 0.5s;
     margin-top: 30px;
 }
 .botones:hover{
-    box-shadow: 3px 3px 10px #1d1a16;
+    box-shadow: 3px 3px 10px var(--black);
     border-radius: 14px;
 }
 
 span{
-    color: #d8ba8e;
+    color: var(--yellow-gold);
     font-weight: 700;
 }
 
@@ -44,13 +56,13 @@ header nav .nav-superior {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: black;
+    background-color: var(--black);
 }
 header nav .nav-superior p{
-    font-size: 20px;
+    font-size: var(--md);
     font-weight: 700;
     font-style: italic;
-    color: #d8ba8e;
+    color: var(--yellow-gold);
 }
 header nav .nav-superior ul{
     display: flex;
@@ -59,9 +71,9 @@ header nav .nav-superior ul li{
     list-style: none;
     margin: 0px 10px;
     padding: 8px 10px;
-    background-color: #00ADB5;
+    background-color: var(--color-buttom);
     border-radius: 14px;
-    font-size: 14px;
+    font-size: var(--sm);
     transition: 0.5s;
 }
 header nav .nav-superior ul li:hover{
@@ -69,7 +81,7 @@ header nav .nav-superior ul li:hover{
 }
 header nav .nav-superior ul li a{
     text-decoration: none;
-    color: white;
+    color: var(--white);
 }
 
 
@@ -77,7 +89,7 @@ header nav .nav-inferior{
     display: flex;
     justify-content: space-between;
     padding: 0px 20px;
-    background-color: #323b42;
+    background-color: var(--bg-nav);
 }
 header nav .nav-inferior img{
     width: 100px;
@@ -93,15 +105,16 @@ header nav .nav-inferior ul li{
     transition: 0.5s;
 }
 header nav .nav-inferior ul li:hover{
-    border-bottom: 3px solid #d8ba8e;
+    border-bottom: 3px solid var(--yellow-gold);
 }
 header nav .nav-inferior ul li a{
     text-decoration: none;
-    color: #787878;
+    color: var(--color-p-subtit);
     transition: 0.5s;
+    font-size: var(--md);
 }
 header nav .nav-inferior ul li a:hover{
-    color: #d8ba8e;
+    color: var(--yellow-gold);
 }
 
 /* -------------------------------MAIN----------------------------- */
@@ -132,10 +145,11 @@ header nav .nav-inferior ul li a:hover{
 }
 
 .contenido-principal .hero h1{
-    width: 40%;
-    color: #787878;
+    width: auto;
+    color: var(--color-p-subtit);
     background-color:rgba(0, 0, 0, 0.589);
     text-align: center;
+    font-size: var(--h1);
 }
 
 .contenido-principal .hero div{
@@ -151,6 +165,7 @@ header nav .nav-inferior ul li a:hover{
     width: 300px;
     height: 150px;
     opacity: 80%;
+    object-fit: cover;
 }
 
 .contenido-principal .hero div a{
@@ -180,16 +195,18 @@ header nav .nav-inferior ul li a:hover{
 .contenido-principal .bienvenidos-nosotros .bienvenidos div h2{
     text-align:center;
     margin-bottom: 10px;
-    color: #787878;
+    color: var(--color-p-subtit);
+    font-size: var(--lg);
 }
 
 .contenido-principal .bienvenidos-nosotros .bienvenidos div p{
-    color: #787878;
+    color: var(--color-p-subtit);
+    font-size: var(--sm);
 }
 
 .contenido-principal .bienvenidos-nosotros .bienvenidos img{
     width: 40%;
-
+    object-fit: cover;
 }
 
 .contenido-principal .bienvenidos-nosotros .nosotros{
@@ -201,14 +218,15 @@ header nav .nav-inferior ul li a:hover{
 .contenido-principal .noticias{
     grid-area: noticias;
     margin-top: 10px;
-    border-left: 1px solid #9e9e9e;
+    border-left: 1px solid var(--border);
 }
 
 .contenido-principal .noticias h2{
     text-align: center;
     padding: 5px 0px;
-    background-color: #e4e8eb;
-    color: #787878;
+    background-color: var(--bg-subtititles);
+    color: var(--color-p-subtit);
+    font-size: var(--lg);
 }
 
 .contenido-principal .noticias div a{
@@ -216,17 +234,20 @@ header nav .nav-inferior ul li a:hover{
     display: block;
     text-align: center;
     padding: 15px 5px 5px 5px;
-    border-top: 1px solid #9e9e9e;
+    border-top: 1px solid var(--border);
     font-style: oblique;
+    font-size: var(--sm);
 }
 
 .contenido-principal .noticias div img {
     width: 100%;
+    object-fit: cover;
 }
 
 .contenido-principal .noticias div p {
     padding: 10px 5px;
-    color: #787878;
+    color: var(--color-p-subtit);
+    font-size: var(--sm);
 }
 
 /* ----------------------MAIN - Pagina REGISTRARSE-------------------- */
@@ -239,22 +260,28 @@ header nav .nav-inferior ul li a:hover{
 
 .registrarse h2 {
     width: 70%;
-    font-size: 24px;
+    font-size: var(--lg);
+    font-weight: bold;
     text-align: center;
     margin: 30px 0px;
-    color: #1d1a16;
-    border-top: 1px solid #9e9e9e;
-    border-bottom: 1px solid #9e9e9e;
+    color: var(--color-title);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
     padding: 10px 15px;
 }
 
 .registrarse form{
     width: 70%;
-    color: #787878;
+    color: var(--color-p-subtit);
+    font-family: 'Quicksand', sans-serif;
 }
 .registrarse form div select{
+    width: 98%;
     height: 38px;
-    color: #787878;
+    color: var(--color-p-subtit);
+}
+.registrarse form div button:hover{
+    box-shadow: 4px 4px 8px var(--black);
 }
     /* ----------------MAIN Pagina LOGIN----------------- */
 
@@ -271,17 +298,17 @@ header nav .nav-inferior ul li a:hover{
 
 .login .eslogan h1 {
     margin: 10px;
-    font-size: 40px;
+    font-size: var(--h1);
     font-weight: 900;
     font-style: italic;
-    color: #1d1a16;
+    color: var(--color-title);
 }
 
 .login .eslogan h3 {
-    font-size: 20px;
+    font-size: var(--sm);
     font-weight: 900;
     font-style: italic;
-    color: #d8ba8e;
+    color: var(--yellow-gold);
 }
 
 .login .contenedor-login input{
@@ -292,11 +319,11 @@ header nav .nav-inferior ul li a:hover{
 
 .login .contenedor-login .boton-login {
     width: min-content;
-    height: 25px;
+    height: 26px;
     padding: 0px 20px;
-    background-color: #00ADB5;
-    color: white;
-    font-size: 15px;
+    background-color: var(--color-buttom);
+    color: var(--white);
+    font-size: var(--sm);
     border: none;
     cursor: pointer;
 }
@@ -313,8 +340,8 @@ header nav .nav-inferior ul li a:hover{
 }
 
 .login .contenedor-login .conectado label {
-    color: #787878;
-    font-size: 14px;
+    color: var(--color-p-subtit);
+    font-size: var(--sm);
 }
 
 .aviso-registro {
@@ -335,9 +362,10 @@ header nav .nav-inferior ul li a:hover{
 }
 
 .aviso-registro div h2{
-    color: #787878;
+    color: var(--color-p-subtit);
+    font-size: var(--lg);
     font-weight: 300;
-    font-style: oblique;
+    font-style: italic;
 }
 .aviso-registro div a{
     display: inline-block;
@@ -351,34 +379,40 @@ header nav .nav-inferior ul li a:hover{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin: 12px 0px;
 }
 
 .encabezado-contactenos img {
     width: 300px;
-    margin: 10px 0px;
+    object-fit: cover;
 }
 
 .encabezado-contactenos div {
     width: 40%;
+    text-align: center;
 }
 
 .encabezado-contactenos div h1 {
     font-weight: 900;
-    font-size: 30px;
-    margin: 10px 0px;
-    color: #d8ba8e;
+    font-size: var(--h1);
+    color: var(--yellow-gold);
 }
 .encabezado-contactenos div p{
-    color: #787878;
+    color: var(--color-p-subtit);
+    font-size: var(--sm);
 }
 
 .contactenos form{
-    width: 80%;
+    width: 70%;
     margin: 20px auto;
+    font-family: 'Quicksand', sans-serif;
 }
 .contactenos form div label {
-    color: #787878;
-    font-family: 'Poppins', sans-serif;
+    color: var(--color-p-subtit);
+    font-size: var(--sm);  
+}
+.contactenos form div button:hover{
+    box-shadow: 4px 4px 8px var(--black);
 }
     /* --------MAIN Pagina REGISTRO DE TRADES--------- */
 
@@ -389,11 +423,11 @@ header nav .nav-inferior ul li a:hover{
 
 .contenedor-registro-trades h1 {
     text-align: center;
-    color: #1d1a16;
-    border-top: 1px solid #9e9e9e;
-    border-bottom: 1px solid #9e9e9e;
+    color: var(--color-title);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
     padding: 10px 0px;
-    font-size: 24px;
+    font-size: var(--lg);
 }
 
 .contenedor-registro-trades form {
@@ -405,7 +439,7 @@ header nav .nav-inferior ul li a:hover{
 .contenedor-registro-trades form section {
     width: 100%;
     margin-top: 30px;
-    border: 1px solid #9e9e9e;
+    border: 1px solid var(--border);
     border-radius: 10px;
     overflow: hidden;
     transition: 0.5s;
@@ -416,13 +450,13 @@ header nav .nav-inferior ul li a:hover{
 
 .contenedor-registro-trades form section h2 {
     width: 290px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     padding: 10px;
     display: inline-block;
-    color: #787878;
-    background-color: #e4e8eb;
-    border-bottom: 1px solid #9e9e9e;
-    font-size: 20px;
+    color: var(--color-p-subtit);
+    background-color: var(--bg-subtititles);
+    border-bottom: 1px solid var(--border);
+    font-size: var(--md);
 }
 
 .contenedor-registro-trades form section div{
@@ -438,24 +472,28 @@ header nav .nav-inferior ul li a:hover{
 }
 
 .contenedor-registro-trades form section div div label {
-    margin-bottom: 3px;
-    color: #797878;
+    margin-bottom: 4px;
+    color: var(--color-p-subtit);
+    font-size: var(--sm);
     font-style: oblique;
 }
 
 .contenedor-registro-trades form section div div input, select {
     width: 100px;
     height: 25px;
-    padding: 0px 5px;
+    padding: 0px 4px;
+    color: var(--color-p-subtit);
 }
 
 .contenedor-registro-trades section p {
     margin: 20px 0px;
+    font-size: var(--sm);
+    color: var(--color-p-subtit);
 }
 
 .contenedor-registro-trades section p span{
-    font-size: 20px;
-    font-weight: 900;
+    font-size: var(--md);
+    font-weight: bold;
 }
 
 /* --------------Main-Pagina EDUCACION -----------------*/
@@ -463,11 +501,11 @@ header nav .nav-inferior ul li a:hover{
     text-align: center;
     margin: 10px 0px;
     padding: 10px;
-    font-size: 24px;
+    font-size: var(--lg);
     font-weight: 300;
-    border-top: 1px solid #9e9e9e;
-    border-bottom: 1px solid #9e9e9e;
-    color: #1d1a1d;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    color: var(--color-title);
     font-weight: bold;
 }
 .contenedor-educacion section .contenedor-videos{
@@ -487,12 +525,13 @@ header nav .nav-inferior ul li a:hover{
 }
 .contenedor-educacion section .contenedor-videos div:hover{
     transform: scale(1.05);
-    box-shadow: 5px 5px 15px #1d1a1d;
+    box-shadow: 8px 8px 15px var(--black);
     border-radius: 25px;
 }
 .contenedor-educacion section .contenedor-videos div .caratula{
     width: 300px;
     height: 200px;
+    object-fit: cover;
     transition: 1s;
 }
 .contenedor-educacion section .contenedor-videos div .caratula:hover{
@@ -508,9 +547,10 @@ header nav .nav-inferior ul li a:hover{
     transform: scale(1.2);
 }
 .contenedor-educacion section .contenedor-videos div p{
-    padding: 10px;
+    padding: 12px;
     text-align: center;
-    color: #787878;
+    color: var(--color-p-subtit);
+    font-size: var(--sm);
     font-style: oblique;
 }
 /* ---------------------FOOTER------------------------ */
@@ -519,22 +559,21 @@ footer {
     display: flex;
     justify-content:space-between;
     align-items: center;
-    background: rgb(29,26,22);
     background: linear-gradient(90deg, rgba(29,26,22,1) 0%, rgba(50,59,66,1) 50%, rgba(120,120,120,1) 100%);
 }
 footer ul {
     list-style: none;
-    margin-left: 30px;
+    margin-left: 32px;
 }
 footer ul li {
-    margin: 10px;
+    margin: 12px;
 }
 footer ul li a {
     text-decoration: none;
-    color:#d8ba8e;
+    color:var(--yellow-gold);
 }
 footer div p {
-    color: #d8ba8e;
+    color: var(--yellow-gold);
     text-align: center;
 }
 footer div a img{
@@ -570,7 +609,7 @@ footer iframe {
     .contenido-principal .noticias{
         width: 60%;
         margin: 20px auto;
-        border: 1px solid #9e9e9e;
+        border: 1px solid var(--border);
     }
     .encabezado-contactenos {
         flex-direction: column;
@@ -578,6 +617,7 @@ footer iframe {
     .encabezado-contactenos div {
         width: 80%;
         text-align: center;
+        margin-top: 16px;
     }
 }
 
@@ -603,17 +643,22 @@ footer iframe {
     }
     .contenido-principal .hero {
         flex-direction: column;
+        justify-content: space-evenly;
     }
     .contenido-principal .hero h1{
         width: 80%;
         text-align: center;
-        font-size: 20px;
+        font-size: var(--lg);
     }
     .contenedor-educacion section .contenedor-videos{
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-auto-rows: 280px;
+        grid-template-columns: repeat(2, 280px);
+        grid-auto-rows: 300px;
         gap: 40px;
+    }
+    .contenedor-educacion section .contenedor-videos div .caratula{
+        width: 240px;
+        height: 180px;
     }
     footer{
         flex-direction: column;
@@ -627,72 +672,6 @@ footer iframe {
 }
 
 @media screen and (max-width:600px){
-    .contenido-principal .bienvenidos-nosotros .bienvenidos {
-        flex-direction: column;
-    }
-    .contenido-principal .bienvenidos-nosotros .bienvenidos div {
-        width: 90%;
-        text-align:center;
-    }
-    .contenido-principal .bienvenidos-nosotros .bienvenidos div h2{
-        margin: 50px 0px 20px 0px;
-    }
-    .contenido-principal .bienvenidos-nosotros .bienvenidos div p{
-        margin-bottom: 20px;
-    }
-    .contenido-principal .noticias{
-        width: 80%;
-    }
-    .registro h2{
-        width: 90%;
-        font-size: 20px;
-    }
-    .login .contenedor-login{
-        display: flex;
-        flex-direction: column;
-    }
-    .login .contenedor-login input {
-        margin-bottom: 5px;
-    }
-    .aviso-registro div{
-        width: 70%;
-        margin: 0px auto;
-    }
-    .aviso-registro div h2{
-        background-color: #e4e8eb;
-        padding: 5px;
-        opacity: 90%;
-        font-size: 20px;
-        font-weight: 300;
-    }
-    .contactenos .encabezado-contactenos div h1{
-        font-size: 20px;
-    }
-    .contenedor-registro-trades form section div{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-auto-rows: 70px;
-    }
-    .contenedor-registro-trades h1{
-        font-size: 20px;
-    }
-    .contenedor-registro-trades form section h2{
-        font-size: 16px;
-        width: 100%;
-        text-align: center;
-    }
-}
-
-@media screen and (max-width:550px){
-    header nav .nav-superior p{
-        font-size: 16px;
-    }
-    header nav .nav-superior ul li{
-        padding: 5px 10px;
-    }
-    header nav .nav-superior ul li a{
-        font-size: 12px;
-    }
     header nav .nav-inferior {
         height: auto;
     }
@@ -702,11 +681,100 @@ footer iframe {
     header nav .nav-inferior ul li{
         padding: 8px 0px;
     }
-    .botones {
-        width: min-content;
-        height: 35px;
-        font-weight: 700;
-        font-size: 16px;
+    header nav .nav-inferior ul li a{
+        font-size: var(--sm);
+    }
+    .contenido-principal .bienvenidos-nosotros .bienvenidos {
+        flex-direction: column;
+    }
+    .contenido-principal .bienvenidos-nosotros .bienvenidos div {
+        width: 90%;
+        text-align:center;
+    }
+    .contenido-principal .bienvenidos-nosotros .bienvenidos div h2{
+        margin: 48px 0px 20px 0px;
+    }
+    .contenido-principal .bienvenidos-nosotros .bienvenidos div p{
+        margin-bottom: 20px;
+    }
+    .contenido-principal .noticias{
+        width: 70%;
+    }
+    .registrarse h2{
+        width: 90%;
+        font-size: var(--md);
+    }
+    .login .contenedor-login{
+        display: flex;
+        flex-direction: column;
+    }
+    .login .contenedor-login input {
+        margin-bottom: 8px;
+    }
+    .login .contenedor-login .conectado input{
+        margin-bottom: 0;
+    }
+    .aviso-registro div{
+        width: 70%;
+        margin: 0px auto;
+    }
+    .aviso-registro div h2{
+        background-color: var(--bg-subtititles);
+        padding: 5px;
+        opacity: 90%;
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .registrarse form{
+        width: 90%;
+    }
+    .registrarse h2 {
+    width: 90%;
+    }
+    .contactenos .encabezado-contactenos div h1{
+        font-size: var(--md);
+    }
+    .contactenos form{
+        width: 90%;
+    }
+    .contenedor-registro-trades form section div{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-rows: 70px;
+    }
+    .contenedor-registro-trades h1{
+        font-size: var(--md);
+    }
+    .contenedor-registro-trades form section h2{
+        font-size: var(--sm);
+        width: 100%;
+        text-align: center;
+    }
+    .contenedor-educacion section h2{
+        font-size: var(--md);
+    }
+    .contenedor-educacion section {
+        width: 85%;
+        margin: 0 auto;
+    }
+    .contenedor-educacion section .contenedor-videos{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 280px;
+        gap: 0;
+    }
+    .contenedor-educacion section .contenedor-videos div .caratula{
+        width: 280px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width:550px){
+    header nav .nav-superior p{
+        font-size: var(--sm);
+    }
+    header nav .nav-superior ul li{
+        padding: 5px 10px;
     }
 }
 
@@ -715,28 +783,26 @@ footer iframe {
         display: none;
     }
     .login .eslogan h1{
-        font-size: 20px;
+        font-size: var(--lg);
     }
     .login .eslogan h3{
-        font-size: 16px;
+        font-size: var(--sm);
     }
     .aviso-registro div{
         width: 90%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
     }
     .aviso-registro div h2{
-        font-size: 16px;
+        font-size: var(--sm);
     }
-    .registro h2 {
-        width: 100%;
-    }
-    .contenedor-registro-trades{
-        width: 100%;
-    }
-    .contenedor-registro-trades section p{
-        padding: 0px 20px;
+    .contenedor-educacion section .contenedor-videos{
+        grid-auto-rows: 300px;
     }
 }
-
 
 @media screen and (max-width:380px){
     header nav .nav-superior {
