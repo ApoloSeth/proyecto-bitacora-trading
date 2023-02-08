@@ -1,0 +1,36 @@
+/*-----FOOTER*/
+
+footer{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(29,26,22,1) 0%, rgba(50,59,66,1) 50%, rgba(120,120,120,1) 100%);
+    ul{
+        list-style: none;
+        margin-left: 32px;
+        li{
+            margin: 12px;
+            a{
+                text-decoration: none;
+                color: $yellow-gold;
+            }
+        }
+    }
+    div{
+        p{
+            color: $yellow-gold;
+            text-align: center;
+        }
+        a{
+            img{
+                transition: 0.5s;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+    iframe{
+        margin: 10px 30px;
+    }
+}
