@@ -265,36 +265,42 @@ header nav .nav-inferior {
   .contenedor-educacion section .contenedor-videos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 280px;
-    gap: 40px;
+    grid-auto-rows: 300px;
+    gap: 20px;
     margin-bottom: 20px;
-    justify-content: center; }
-    .contenedor-educacion section .contenedor-videos div {
+    justify-content: center;
+    align-items: start; }
+    .contenedor-educacion section .contenedor-videos > div {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       position: relative;
       transition: 0.5s; }
-      .contenedor-educacion section .contenedor-videos div:hover {
+      .contenedor-educacion section .contenedor-videos > div:hover {
         transform: scale(1.05);
         box-shadow: 8px 8px 15px #000000;
         border-radius: 25px; }
-      .contenedor-educacion section .contenedor-videos div .caratula {
+      .contenedor-educacion section .contenedor-videos > div div {
         width: 300px;
-        height: 200px;
-        object-fit: cover;
-        transition: 1s; }
-        .contenedor-educacion section .contenedor-videos div .caratula:hover {
-          border-radius: 25px; }
-      .contenedor-educacion section .contenedor-videos div a .logo-youtube {
-        position: absolute;
-        top: 30%;
-        left: 45%;
-        transition: 1s; }
-        .contenedor-educacion section .contenedor-videos div a .logo-youtube:hover {
-          transform: scale(1.2); }
-      .contenedor-educacion section .contenedor-videos div p {
+        height: 200px; }
+        .contenedor-educacion section .contenedor-videos > div div .caratula {
+          width: 300px;
+          height: 200px;
+          object-fit: cover;
+          transition: 1s;
+          margin-top: 12px;
+          position: relative; }
+          .contenedor-educacion section .contenedor-videos > div div .caratula:hover {
+            border-radius: 25px; }
+        .contenedor-educacion section .contenedor-videos > div div a .logo-youtube {
+          position: absolute;
+          top: 30%;
+          left: 45%;
+          transition: 1s; }
+          .contenedor-educacion section .contenedor-videos > div div a .logo-youtube:hover {
+            transform: scale(1.2); }
+      .contenedor-educacion section .contenedor-videos > div p {
         padding: 12px;
         text-align: center;
         color: #787878;
@@ -454,6 +460,21 @@ footer {
     margin: 10px 30px; }
 
 /*-----MEDIA QUERY*/
+@media screen and (max-width: 1200px) {
+  .contenedor-educacion section .contenedor-videos {
+    grid-auto-rows: 300px;
+    gap: 20px; }
+    .contenedor-educacion section .contenedor-videos div div {
+      display: flex;
+      justify-content: center; }
+      .contenedor-educacion section .contenedor-videos div div .caratula {
+        width: 240px;
+        height: 180px; }
+      .contenedor-educacion section .contenedor-videos div div a .logo-youtube {
+        top: 75px; }
+  .registrarse form {
+    width: 55%; } }
+
 @media screen and (max-width: 1000px) {
   .contenido-principal {
     display: grid;
@@ -463,7 +484,17 @@ footer {
     .contenido-principal .noticias {
       width: 60%;
       margin: 20px auto;
-      border: 1px solid #9e9e9e; } }
+      border: 1px solid #9e9e9e; }
+  .contenedor-educacion section .contenedor-videos {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto; }
+    .contenedor-educacion section .contenedor-videos div div .caratula {
+      width: 260px;
+      height: 200px; }
+  .contactenos .encabezado-contactenos div {
+    width: 60%; }
+  .contactenos form {
+    width: 60%; } }
 
 @media screen and (max-width: 800px) {
   .contenido-principal .hero {
@@ -472,14 +503,34 @@ footer {
     .contenido-principal .hero h1 {
       width: 80%;
       text-align: center;
-      font-size: 22px; } }
+      font-size: 22px; }
+  .contactenos .encabezado-contactenos {
+    flex-direction: column; }
+    .contactenos .encabezado-contactenos div {
+      width: 80%;
+      margin-top: 16px; }
+  .contactenos form {
+    width: 70%; }
+  .login {
+    flex-direction: column; }
+    .login .eslogan h1 {
+      margin-bottom: 0px; }
+  .aviso-registro div {
+    width: 50%; }
+  .registrarse form {
+    width: 70%; } }
 
 @media screen and (max-width: 700px) {
   header nav .nav-inferior {
     justify-content: center;
     height: 70px; }
     header nav .nav-inferior img {
-      display: none; } }
+      display: none; }
+  .contenedor-educacion section .contenedor-videos {
+    grid-template-columns: 350px;
+    grid-auto-rows: auto; }
+  .contenido-principal .bienvenidos-nosotros .bienvenidos img {
+    height: 400px; } }
 
 @media screen and (max-width: 650px) {
   header nav .nav-superior p {
@@ -500,17 +551,104 @@ footer {
       width: 90%;
       text-align: center; }
       .contenido-principal .bienvenidos-nosotros .bienvenidos div h2 {
-        margin: 48px 0px 20px 0px; }
+        margin: 48px 0px 20px 0px;
+        font-size: 18px; }
       .contenido-principal .bienvenidos-nosotros .bienvenidos div p {
-        margin-bottom: 20px; }
+        margin-bottom: 20px;
+        font-size: 14px; }
     .contenido-principal .bienvenidos-nosotros .bienvenidos img {
       width: 60%; }
   .contenido-principal .noticias {
-    width: 70%; } }
+    width: 70%; }
+    .contenido-principal .noticias h2 {
+      font-size: 18px; }
+    .contenido-principal .noticias div a {
+      font-size: 16px; }
+    .contenido-principal .noticias div p {
+      font-size: 14px; }
+  .contenedor-registro-trades h1 {
+    font-size: 18px; }
+  .contenedor-registro-trades form section h2 {
+    font-size: 16px; }
+  .contenedor-registro-trades form section div div label {
+    font-size: 14px; }
+  .contenedor-registro-trades form section div div select {
+    font-size: 14px; }
+  .contenedor-registro-trades section p {
+    font-size: 14px; }
+  .contenedor-educacion section h2 {
+    font-size: 18px; }
+  .contactenos .encabezado-contactenos div h1 {
+    font-size: 18px; }
+  .contactenos .encabezado-contactenos div p {
+    font-size: 14px; }
+  .contactenos form div label {
+    font-size: 14px; }
+  .login {
+    height: 200px; }
+    .login .contenedor-login {
+      display: flex;
+      flex-direction: column; }
+      .login .contenedor-login input {
+        margin-bottom: 8px; }
+      .login .contenedor-login .conectado input {
+        margin-bottom: 0; }
+  .aviso-registro div {
+    width: 70%;
+    margin: 0px auto; }
+    .aviso-registro div h2 {
+      background-color: #e4e8eb;
+      padding: 5px;
+      opacity: 90%;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 12px 0 12px 0; }
+  .registrarse h2 {
+    font-size: 18px; }
+  .registrarse form div label {
+    font-size: 14px; }
+  .registrarse form div select {
+    font-size: 14px; }
+  footer {
+    flex-direction: column; }
+    footer ul {
+      margin: 10px 0px 20px 0px; }
+      footer ul li {
+        text-align: center; } }
+
+@media screen and (max-width: 600px) {
+  .contenedor-registro-trades h1 {
+    font-size: 18px; }
+  .contenedor-registro-trades form section h2 {
+    font-size: 16px;
+    width: 100%;
+    text-align: center; }
+  .contenedor-registro-trades form section div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 70px; }
+  .registrarse h2 {
+    width: 90%; }
+  .registrarse form {
+    width: 90%; } }
 
 @media screen and (max-width: 500px) {
   .contenido-principal .hero div img {
-    display: none; } }
+    display: none; }
+  .login .eslogan h1 {
+    font-size: 22px; }
+  .login .eslogan h3 {
+    font-size: 16px; }
+  .aviso-registro div {
+    width: 90%; }
+    .aviso-registro div h2 {
+      font-size: 16px; } }
+
+@media screen and (max-width: 400px) {
+  .contenedor-educacion section .contenedor-videos {
+    grid-template-columns: 300px; }
+  .contactenos form {
+    width: 90%; } }
 
 @media screen and (max-width: 380px) {
   header nav .nav-superior {
@@ -518,4 +656,8 @@ footer {
     header nav .nav-superior p {
       display: none; }
   .contenido-principal .hero div {
-    width: 80%; } }
+    width: 80%; }
+  .contenedor-registro-trades form section div {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 70px; } }

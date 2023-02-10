@@ -593,16 +593,16 @@ footer iframe {
 }
 
 /* --------------Medias Query------------------- */
-@media screen and (max-width:1100px) {
+/* @media screen and (max-width:1100px) {
     .contenedor-educacion section .contenedor-videos{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: 280px;
         gap: 40px;
     }
-}
+} */
 @media screen and (max-width:950px) {
-    .contenido-principal {
+    /* .contenido-principal {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 80vh auto auto ;
@@ -611,12 +611,12 @@ footer iframe {
         "bienvenidos"
         "noticias"
         ;
-    }
-    .contenido-principal .noticias{
+    } */
+    /* .contenido-principal .noticias{
         width: 60%;
         margin: 20px auto;
         border: 1px solid var(--border);
-    }
+    } */
     .encabezado-contactenos {
         flex-direction: column;
     }
@@ -638,7 +638,7 @@ footer iframe {
         width: 50%;
     }
 }
-@media screen and (max-width:800px){
+/* @media screen and (max-width:800px){
     .contenido-principal .hero {
         flex-direction: column;
         justify-content: space-evenly;
@@ -648,16 +648,16 @@ footer iframe {
         text-align: center;
         font-size: var(--lg);
     }
-}
+} */
 @media screen and (max-width:700px){
-    header nav .nav-inferior{
+    /* header nav .nav-inferior{
         justify-content: center;
         height: 70px;
     }
     header nav .nav-inferior img{
         display: none;
-    }
-    .contenedor-educacion section .contenedor-videos{
+    } */
+    /* .contenedor-educacion section .contenedor-videos{
         display: grid;
         grid-template-columns: repeat(2, 280px);
         grid-auto-rows: 300px;
@@ -666,7 +666,7 @@ footer iframe {
     .contenedor-educacion section .contenedor-videos div .caratula{
         width: 240px;
         height: 180px;
-    }
+    } */
     footer{
         flex-direction: column;
     }
@@ -679,7 +679,7 @@ footer iframe {
 }
 
 @media screen and (max-width:600px){
-    header nav .nav-inferior {
+    /* header nav .nav-inferior {
         height: auto;
     }
     header nav .nav-inferior ul{
@@ -690,8 +690,8 @@ footer iframe {
     }
     header nav .nav-inferior ul li a{
         font-size: var(--sm);
-    }
-    .contenido-principal .bienvenidos-nosotros .bienvenidos {
+    } */
+    /* .contenido-principal .bienvenidos-nosotros .bienvenidos {
         flex-direction: column;
     }
     .contenido-principal .bienvenidos-nosotros .bienvenidos div {
@@ -703,10 +703,10 @@ footer iframe {
     }
     .contenido-principal .bienvenidos-nosotros .bienvenidos div p{
         margin-bottom: 20px;
-    }
-    .contenido-principal .noticias{
+    } */
+    /* .contenido-principal .noticias{
         width: 70%;
-    }
+    } */
     .registrarse h2{
         width: 90%;
         font-size: var(--md);
@@ -744,7 +744,7 @@ footer iframe {
     .contactenos form{
         width: 90%;
     }
-    .contenedor-registro-trades form section div{
+    /* .contenedor-registro-trades form section div{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         grid-auto-rows: 70px;
@@ -756,15 +756,15 @@ footer iframe {
         font-size: var(--sm);
         width: 100%;
         text-align: center;
-    }
-    .contenedor-educacion section h2{
+    } */
+    /* .contenedor-educacion section h2{
         font-size: var(--md);
     }
     .contenedor-educacion section {
         width: 85%;
         margin: 0 auto;
-    }
-    .contenedor-educacion section .contenedor-videos{
+    } */
+    /* .contenedor-educacion section .contenedor-videos{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-auto-rows: 280px;
@@ -773,22 +773,22 @@ footer iframe {
     .contenedor-educacion section .contenedor-videos div .caratula{
         width: 280px;
         height: 200px;
-    }
+    } */
 }
 
-@media screen and (max-width:550px){
+/* @media screen and (max-width:550px){
     header nav .nav-superior p{
         font-size: var(--sm);
     }
     header nav .nav-superior ul li{
         padding: 5px 10px;
     }
-}
+} */
 
 @media screen and (max-width:500px){
-    .contenido-principal .hero div img{
+    /* .contenido-principal .hero div img{
         display: none;
-    }
+    } */
     .login .eslogan h1{
         font-size: var(--lg);
     }
@@ -806,24 +806,24 @@ footer iframe {
     .aviso-registro div h2{
         font-size: var(--sm);
     }
-    .contenedor-educacion section .contenedor-videos{
+    /* .contenedor-educacion section .contenedor-videos{
         grid-auto-rows: 300px;
-    }
+    } */
 }
 
 @media screen and (max-width:380px){
-    header nav .nav-superior {
+    /* header nav .nav-superior {
         justify-content: end;
     }
     header nav .nav-superior p{
         display: none;
-    }
-    .contenido-principal .hero div {
+    } */
+    /* .contenido-principal .hero div {
         width: 80%;
-    }
-    .contenedor-registro-trades form section div{
+    } */
+    /* .contenedor-registro-trades form section div{
         display: grid;
         grid-template-columns: repeat(1,1fr);
         grid-auto-rows: 70px;
-    }
+    } */
 }
