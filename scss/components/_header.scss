@@ -13,6 +13,7 @@ header{
                 font-weight: 700;
                 font-style: italic;
                 color: $yellow-gold;
+                margin-bottom: 0;
             }
             ul{
                 display: flex;
@@ -24,7 +25,6 @@ header{
                     padding: 8px 10px;
                     background-color: $color-buttom;
                     border-radius: 14px;
-                    font-size: $sm;
                     transition: 0.5s;
                     &:hover{
                         box-shadow: 3px 3px 3px #00f2ff;
@@ -32,6 +32,7 @@ header{
                     a{
                         text-decoration: none;
                         color: $white;
+                        font-size: $sm;
                     }
                 }
             }

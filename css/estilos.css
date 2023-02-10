@@ -42,7 +42,8 @@ header nav .nav-superior {
     font-size: 18px;
     font-weight: 700;
     font-style: italic;
-    color: #d8ba8e; }
+    color: #d8ba8e;
+    margin-bottom: 0; }
   header nav .nav-superior ul {
     display: flex;
     padding: 0;
@@ -53,13 +54,13 @@ header nav .nav-superior {
       padding: 8px 10px;
       background-color: #00ADB5;
       border-radius: 14px;
-      font-size: 16px;
       transition: 0.5s; }
       header nav .nav-superior ul li:hover {
         box-shadow: 3px 3px 3px #00f2ff; }
       header nav .nav-superior ul li a {
         text-decoration: none;
-        color: #ffffff; }
+        color: #ffffff;
+        font-size: 16px; }
 
 header nav .nav-inferior {
   display: flex;
@@ -109,7 +110,8 @@ header nav .nav-inferior {
       color: #787878;
       background-color: rgba(0, 0, 0, 0.589);
       text-align: center;
-      font-size: 26px; }
+      font-size: 26px;
+      margin-left: 16px; }
     .contenido-principal .hero div {
       width: 50%;
       height: 60%;
@@ -129,7 +131,8 @@ header nav .nav-inferior {
     grid-area: bienvenidos;
     display: flex;
     flex-direction: column;
-    height: auto; }
+    max-width: 1000px;
+    margin: 0 auto; }
     .contenido-principal .bienvenidos-nosotros .bienvenidos {
       display: flex;
       justify-content: space-around;
@@ -149,7 +152,7 @@ header nav .nav-inferior {
           font-size: 16px; }
       .contenido-principal .bienvenidos-nosotros .bienvenidos img {
         width: 40%;
-        height: 600px;
+        height: 500px;
         object-fit: cover;
         border-radius: 16px; }
     .contenido-principal .bienvenidos-nosotros .nosotros {
@@ -319,7 +322,7 @@ header nav .nav-inferior {
       font-size: 16px; }
 
 .contactenos form {
-  width: 70%;
+  width: 40%;
   margin: 20px auto;
   font-family: 'Quicksand', sans-serif; }
   .contactenos form div label {
@@ -334,7 +337,8 @@ header nav .nav-inferior {
 .login {
   display: flex;
   justify-content: space-around;
-  align-items: center; }
+  align-items: center;
+  height: 100px; }
   .login .eslogan {
     margin: 15px;
     text-align: center; }
@@ -352,7 +356,9 @@ header nav .nav-inferior {
   .login .contenedor-login input {
     width: 200px;
     height: 25px;
-    padding: 0px 10px; }
+    padding: 0px 12px;
+    border: 1px solid #787878;
+    border-radius: 12px; }
   .login .contenedor-login .boton-login {
     width: min-content;
     height: 26px;
@@ -360,8 +366,12 @@ header nav .nav-inferior {
     background-color: #00ADB5;
     color: #ffffff;
     font-size: 16px;
+    font-weight: 300;
     border: none;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: 0.5s; }
+    .login .contenedor-login .boton-login:hover {
+      box-shadow: 3px 3px 10px #000000; }
   .login .contenedor-login .conectado {
     display: flex;
     align-items: center;
@@ -375,7 +385,7 @@ header nav .nav-inferior {
 
 .aviso-registro {
   width: 100%;
-  height: 60vh;
+  height: calc(100vh - 54px - 87px - 100px);
   background-image: url("../img/aviso-registro.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -442,3 +452,70 @@ footer {
       transform: scale(1.1); }
   footer iframe {
     margin: 10px 30px; }
+
+/*-----MEDIA QUERY*/
+@media screen and (max-width: 1000px) {
+  .contenido-principal {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80vh auto auto;
+    grid-template-areas: "hero" "bienvenidos" "noticias"; }
+    .contenido-principal .noticias {
+      width: 60%;
+      margin: 20px auto;
+      border: 1px solid #9e9e9e; } }
+
+@media screen and (max-width: 800px) {
+  .contenido-principal .hero {
+    flex-direction: column;
+    justify-content: space-evenly; }
+    .contenido-principal .hero h1 {
+      width: 80%;
+      text-align: center;
+      font-size: 22px; } }
+
+@media screen and (max-width: 700px) {
+  header nav .nav-inferior {
+    justify-content: center;
+    height: 70px; }
+    header nav .nav-inferior img {
+      display: none; } }
+
+@media screen and (max-width: 650px) {
+  header nav .nav-superior p {
+    font-size: 16px; }
+  header nav .nav-superior ul li {
+    padding: 5px 10px; }
+  header nav .nav-inferior {
+    height: auto; }
+    header nav .nav-inferior ul {
+      flex-direction: column; }
+      header nav .nav-inferior ul li {
+        padding: 8px 0px; }
+        header nav .nav-inferior ul li a {
+          font-size: 16px; }
+  .contenido-principal .bienvenidos-nosotros .bienvenidos {
+    flex-direction: column; }
+    .contenido-principal .bienvenidos-nosotros .bienvenidos div {
+      width: 90%;
+      text-align: center; }
+      .contenido-principal .bienvenidos-nosotros .bienvenidos div h2 {
+        margin: 48px 0px 20px 0px; }
+      .contenido-principal .bienvenidos-nosotros .bienvenidos div p {
+        margin-bottom: 20px; }
+    .contenido-principal .bienvenidos-nosotros .bienvenidos img {
+      width: 60%; }
+  .contenido-principal .noticias {
+    width: 70%; } }
+
+@media screen and (max-width: 500px) {
+  .contenido-principal .hero div img {
+    display: none; } }
+
+@media screen and (max-width: 380px) {
+  header nav .nav-superior {
+    justify-content: end; }
+    header nav .nav-superior p {
+      display: none; }
+  .contenido-principal .hero div {
+    width: 80%; } }

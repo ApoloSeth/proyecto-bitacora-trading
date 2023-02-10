@@ -1,0 +1,130 @@
+/*-----MEDIA QUERY*/
+@media screen and (max-width:1000px) {
+    .contenido-principal {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 80vh auto auto ;
+        grid-template-areas: 
+        "hero"
+        "bienvenidos"
+        "noticias"
+        ;
+        .noticias{
+            width: 60%;
+            margin: 20px auto;
+            border: 1px solid $border;
+        }
+    }
+}
+
+@media screen and (max-width:800px){
+    .contenido-principal{
+        .hero{
+            flex-direction: column;
+            justify-content: space-evenly;
+            h1{
+                width: 80%;
+            text-align: center;
+            font-size: $lg;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:700px){
+    header{
+        nav{
+            .nav-inferior{
+                justify-content: center;
+                height: 70px;
+                img{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:650px){
+    header{
+        nav{
+            .nav-superior{
+                p{
+                    font-size: $sm;
+                }
+                ul{
+                    li{
+                        padding: 5px 10px;
+                    }
+                }
+            }
+            .nav-inferior{
+                height: auto;
+                ul{
+                    flex-direction: column;
+                    li{
+                        padding: 8px 0px;
+                        a{
+                            font-size: $sm;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .contenido-principal{
+        .bienvenidos-nosotros{
+            .bienvenidos{
+                flex-direction: column;
+                div{
+                    width: 90%;
+                    text-align:center;
+                    h2{
+                        margin: 48px 0px 20px 0px;
+                    }
+                    p{
+                        margin-bottom: 20px;
+                    }
+                }
+                img{
+                    width: 60%;
+                }
+            }
+        }
+        .noticias{
+            width: 70%;
+        }
+    }
+}
+
+@media screen and (max-width:500px){
+    .contenido-principal{
+        .hero{
+            div{
+                img{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:380px){
+    header{
+        nav{
+            .nav-superior{
+                justify-content: end;
+                p{
+                    display: none;
+                }
+            }
+        }
+    }
+    .contenido-principal{
+        .hero{
+            div{
+                width: 80%;
+            }
+        }
+    }
+}
