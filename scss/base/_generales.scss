@@ -19,7 +19,7 @@ body {
     background-color: $color-buttom;
     color: $white;
     padding: 8px 10px;
-    font-size: $sm;
+    font-size: nth($fuentes, 4);
     border: none;
     transition: 0.5s;
     margin-top: 30px;

@@ -3,13 +3,11 @@ header{
     nav{
         .nav-superior{
             height: 54px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            @include flex (flex, row, space-between, center );
             padding: 10px 20px;
             background-color: $black;
             p{
-                font-size: $md;
+                font-size: nth($fuentes, 3);
                 font-weight: 700;
                 font-style: italic;
                 color: $yellow-gold;
@@ -32,22 +30,20 @@ header{
                     a{
                         text-decoration: none;
                         color: $white;
-                        font-size: $sm;
+                        font-size: nth($fuentes, 4);
                     }
                 }
             }
         }
         .nav-inferior{
-            display: flex;
-            justify-content: space-between;
+            @include flex(flex, row, space-between, center);
             padding: 0px 20px;
             background-color: $bg-nav;
             img{
                 width: 100px;
             }
             ul{
-                display: flex;
-                align-items: center;
+                @include flex (flex, row, end, center);
                 list-style: none;
                 padding: 0;
                 margin: 0;
@@ -62,7 +58,7 @@ header{
                         text-decoration: none;
                         color: $color-p-subtit;
                         transition: 0.5s;
-                        font-size: $md;
+                        font-size: nth($fuentes, 3);
                         &:hover{
                             color: $yellow-gold;
                         }

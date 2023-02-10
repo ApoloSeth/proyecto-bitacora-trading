@@ -7,8 +7,7 @@
                 gap: 20px;
                 div{
                     div{
-                        display: flex;
-                        justify-content: center;
+                        @include flex(flex, row, center, start);
                         .caratula{
                             width: 240px;
                             height: 180px;
@@ -83,7 +82,7 @@
             h1{
                 width: 80%;
             text-align: center;
-            font-size: $lg;
+            font-size: nth($fuentes, 2 );
             }
         }
     }
@@ -155,7 +154,7 @@
         nav{
             .nav-superior{
                 p{
-                    font-size: $sm;
+                    font-size: nth($fuentes, 4);
                 }
                 ul{
                     li{
@@ -170,7 +169,7 @@
                     li{
                         padding: 8px 0px;
                         a{
-                            font-size: $sm;
+                            font-size: nth($fuentes, 4);
                         }
                     }
                 }
@@ -186,11 +185,11 @@
                     text-align:center;
                     h2{
                         margin: 48px 0px 20px 0px;
-                        font-size: $md;
+                        font-size: nth($fuentes, 3);
                     }
                     p{
                         margin-bottom: 20px;
-                        font-size: $sm - 2px;
+                        font-size: nth($fuentes,4 ) - 2px;
                     }
                 }
                 img{
@@ -201,34 +200,34 @@
         .noticias{
             width: 70%;
             h2{
-                font-size: $md;
+                font-size: nth($fuentes, 3);
             }
             div{
                 a{
-                    font-size: $sm;
+                    font-size: nth($fuentes, 4);
                 }
                 p{
-                    font-size: $sm - 2px;
+                    font-size: nth($fuentes, 4) - 2px;
                 }
             }
         }
     }
     .contenedor-registro-trades{
         h1{
-            font-size: $md;
+            font-size: nth($fuentes, 3);
         }
         form{
             section{
                 h2{
-                    font-size: $sm;
+                    font-size: nth($fuentes, 4);
                 }
                 div{
                     div{
                         label{
-                            font-size: $sm - 2px;
+                            font-size: nth($fuentes, 4) - 2px;
                         }
                         select{
-                            font-size: $sm - 2px;
+                            font-size: nth($fuentes, 4) - 2px;
                         }
                     }
                 }
@@ -236,14 +235,14 @@
         }
         section{
             p{
-                font-size: $sm - 2px;
+                font-size: nth($fuentes, 4) - 2px;
             }
         }
     }
     .contenedor-educacion{
         section{
             h2{
-                font-size: $md;
+                font-size: nth($fuentes, 3);
             }
         }
     }
@@ -251,17 +250,17 @@
         .encabezado-contactenos{
             div{
                 h1{
-                    font-size: $md;
+                    font-size: nth($fuentes, 3);
                 }
                 p{
-                    font-size: $sm - 2px;
+                    font-size: nth($fuentes, 4) - 2px;
                 }
             }
         }
         form{
             div{
                 label{
-                    font-size: $sm - 2px;
+                    font-size: nth($fuentes, 4) - 2px;
                 }
             }
         }
@@ -269,8 +268,7 @@
     .login{
         height: 200px;
         .contenedor-login{
-            display: flex;
-            flex-direction: column;
+            @include flex(flex, column, center, center);
             input{
                 margin-bottom: 8px;
             }
@@ -289,7 +287,7 @@
                 background-color: $bg-subtititles;
                 padding: 5px;
                 opacity: 90%;
-                font-size: $md;
+                font-size: nth($fuentes, 3);
                 font-weight: bold;
                 border-radius: 12px 0 12px 0;
             }
@@ -297,15 +295,15 @@
     }
     .registrarse{
         h2{
-            font-size: $md;
+            font-size: nth($fuentes, 3);
         }
         form{
             div{
                 label{
-                    font-size: $sm - 2px;
+                    font-size: nth($fuentes, 4) - 2px;
                 }
                 select{
-                    font-size: $sm - 2px;
+                    font-size: nth($fuentes, 4) - 2px;
                 }
             }
         }
@@ -324,12 +322,12 @@
 @media screen and (max-width:600px){
     .contenedor-registro-trades{
         h1{
-            font-size: $md;
+            font-size: nth($fuentes, 3);
         }
         form{
             section{
                 h2{
-                    font-size: $sm;
+                    font-size: nth($fuentes, 4);
                     width: 100%;
                     text-align: center;
                 }
@@ -364,10 +362,10 @@
     .login{
         .eslogan{
             h1{
-                font-size: $lg;
+                font-size: nth($fuentes, 2);
             }
             h3{
-                font-size: $sm;
+                font-size: nth($fuentes, 4);
             }
         }
     }
@@ -375,7 +373,7 @@
         div{
             width: 90%;
             h2{
-                font-size: $sm;
+                font-size: nth($fuentes, 4);
             }
         }
     }

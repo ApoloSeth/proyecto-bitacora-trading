@@ -23,16 +23,13 @@
             color: $color-p-subtit;
             background-color:rgba(0, 0, 0, 0.589);
             text-align: center;
-            font-size: $h1;
+            font-size: nth($fuentes, 1);
             margin-left: 16px;
         }
         div{
             width: 50%;
             height: 60%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            @include flex (flex, column, center, center);
             img{
                 width: 300px;
                 height: 150px;
@@ -47,8 +44,7 @@
     }
     .bienvenidos-nosotros{
         grid-area: bienvenidos;
-        display: flex;
-        flex-direction: column;
+        @include flex (flex, column, start, center);
         max-width: 1000px;
         margin: 0 auto;
         .bienvenidos{
@@ -64,11 +60,11 @@
                     text-align:center;
                     margin-bottom: 10px;
                     color: $color-p-subtit;
-                    font-size: $lg;
+                    font-size: nth($fuentes, 2);
                 }
                 p{
                     color: $color-p-subtit;
-                    font-size: $sm;
+                    font-size: nth($fuentes, 4);
                 }
             }
             img{
@@ -92,7 +88,7 @@
             padding: 5px 0px;
             background-color: $bg-subtititles;
             color: $color-p-subtit;
-            font-size: $lg;
+            font-size: nth($fuentes, 2);
         }
         div{
             a{
@@ -102,7 +98,7 @@
                 padding: 15px 5px 5px 5px;
                 border-top: 1px solid $border;
                 font-style: oblique;
-                font-size: $sm;
+                font-size: nth($fuentes, 4);
             }
             img{
                 width: 100%;
@@ -111,7 +107,7 @@
             p{
                 padding: 10px 5px;
                 color: $color-p-subtit;
-                font-size: $sm;
+                font-size: nth($fuentes, 4);
             }
         }
     }
@@ -127,12 +123,10 @@
         border-top: 1px solid $border;
         border-bottom: 1px solid $border;
         padding: 10px 0px;
-        font-size: $lg;
+        font-size: nth($fuentes, 2);
     }
     form{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex (flex, column, start, center);
         section{
             width: 100%;
             margin-top: 30px;
@@ -151,20 +145,18 @@
                 color: $color-p-subtit;
                 background-color: $bg-subtititles;
                 border-bottom: 1px solid $border;
-                font-size: $md;
+                font-size: nth($fuentes, 3);
             }
             div{
                 display: grid;
                 grid-template-columns: repeat(3,1fr);
                 grid-auto-rows: 70px;
                 div{
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
+                    @include flex (flex, column, start, center);
                     label{
                         margin-bottom: 4px;
                         color: $color-p-subtit;
-                        font-size: $sm;
+                        font-size: nth($fuentes, 4);
                         font-style: oblique;
                     }
                     input{
@@ -186,11 +178,11 @@
     section{
         p{
             margin: 20px 0px;
-            font-size: $sm;
+            font-size: nth($fuentes, 4);
             color: $color-p-subtit;
         }
         span{
-            font-size: $md;
+            font-size: nth($fuentes, 3);
             font-weight: bold;
         }
     }
@@ -205,7 +197,7 @@
             text-align: center;
             margin: 10px 0px;
             padding: 10px;
-            font-size: $lg;
+            font-size: nth($fuentes, 2);
             font-weight: 300;
             border-top: 1px solid $border;
             border-bottom: 1px solid $border;
@@ -221,10 +213,7 @@
             justify-content: center;
             align-items: start;
             > div{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+                @include flex (flex, column, start, center);
                 position: relative;
                 transition: 0.5s;
                 &:hover{
@@ -262,7 +251,7 @@
                     padding: 12px;
                     text-align: center;
                     color: $color-p-subtit;
-                    font-size: $sm;
+                    font-size: nth($fuentes, 4);
                     font-style: oblique;
                 }
             }
@@ -273,9 +262,7 @@
 /*-----MAIN - CONTACTENOS*/
 .contactenos{
     .encabezado-contactenos{
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
+        @include flex (flex, row, space-evenly, center);
         margin: 12px 0px;
         img{
             width: 300px;
@@ -286,23 +273,23 @@
             text-align: center;
             h1{
                 font-weight: 900;
-                font-size: $h1;
+                font-size: nth($fuentes, 1);
                 color: $yellow-gold;
             }
             p{
                 color: $color-p-subtit;
-                font-size: $sm;
+                font-size: nth($fuentes, 4);
             }
         }
     }
     form{
-        width: 40%;
+        width: 50%;
         margin: 20px auto;
         font-family: 'Quicksand', sans-serif;
         div{
             label{
                 color: $color-p-subtit;
-                font-size: $sm;  
+                font-size: nth($fuentes, 4);  
             }
             button{
                 transition: 0.5s;
@@ -316,22 +303,20 @@
 
 /*-----MAIN - LOGIN*/
 .login{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @include flex (flex, row, space-around, center);
     height: 100px;
     .eslogan{
         margin: 15px;
         text-align: center;
         h1{
             margin: 10px;
-            font-size: $h1;
+            font-size: nth($fuentes, 1);
             font-weight: 900;
             font-style: italic;
             color: $color-title;
         }
         h3{
-            font-size: $sm;
+            font-size: nth($fuentes, 4);
             font-weight: 900;
             font-style: italic;
             color: $yellow-gold;
@@ -351,7 +336,7 @@
             padding: 0px 20px;
             background-color: $color-buttom;
             color: $white;
-            font-size: $sm;
+            font-size: nth($fuentes, 4);
             font-weight: 300;
             border: none;
             cursor: pointer;
@@ -361,8 +346,7 @@
             }
         }
         .conectado{
-            display: flex;
-            align-items: center;
+            @include flex (flex, row, start, center);
             margin-top: 5px;
             input{
                 width: 15px;
@@ -370,7 +354,7 @@
             }
             label{
                 color: $color-p-subtit;
-                font-size: $sm;
+                font-size: nth($fuentes, 4);
             }
         }
     }
@@ -382,15 +366,14 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    align-items: center;
+    @include flex (flex, row, start, center);
     div{
         width: 40%;
         margin-left: 30px;
         text-align: center;
         h2{
             color: $color-p-subtit;
-            font-size: $lg;
+            font-size: nth($fuentes, 2);
             font-weight: 300;
             font-style: italic;
         }
@@ -404,12 +387,10 @@
 
 /*-----MAIN - REGISTRARSE*/
 .registrarse{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex (flex, column, start, center);
     h2{
         width: 70%;
-        font-size: $lg;
+        font-size: nth($fuentes, 2);
         font-weight: bold;
         text-align: center;
         margin: 30px 0px;

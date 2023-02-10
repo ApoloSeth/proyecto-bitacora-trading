@@ -617,17 +617,17 @@ footer iframe {
         margin: 20px auto;
         border: 1px solid var(--border);
     } */
-    .encabezado-contactenos {
+    /* .encabezado-contactenos {
         flex-direction: column;
     }
     .encabezado-contactenos div {
         width: 80%;
         text-align: center;
         margin-top: 16px;
-    }
+    } */
 }
 
-@media screen and (max-width:850px){
+/* @media screen and (max-width:850px){
     .login {
         flex-direction: column;
     }
@@ -637,7 +637,7 @@ footer iframe {
     .aviso-registro div{
         width: 50%;
     }
-}
+} */
 /* @media screen and (max-width:800px){
     .contenido-principal .hero {
         flex-direction: column;
@@ -707,11 +707,11 @@ footer iframe {
     /* .contenido-principal .noticias{
         width: 70%;
     } */
-    .registrarse h2{
+    /* .registrarse h2{
         width: 90%;
         font-size: var(--md);
-    }
-    .login .contenedor-login{
+    } */
+    /* .login .contenedor-login{
         display: flex;
         flex-direction: column;
     }
@@ -720,8 +720,8 @@ footer iframe {
     }
     .login .contenedor-login .conectado input{
         margin-bottom: 0;
-    }
-    .aviso-registro div{
+    } */
+    /* .aviso-registro div{
         width: 70%;
         margin: 0px auto;
     }
@@ -731,19 +731,19 @@ footer iframe {
         opacity: 90%;
         font-size: 20px;
         font-weight: 300;
-    }
-    .registrarse form{
+    } */
+    /* .registrarse form{
         width: 90%;
     }
     .registrarse h2 {
     width: 90%;
-    }
-    .contactenos .encabezado-contactenos div h1{
+    } */
+    /* .contactenos .encabezado-contactenos div h1{
         font-size: var(--md);
     }
     .contactenos form{
         width: 90%;
-    }
+    } */
     /* .contenedor-registro-trades form section div{
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -786,9 +786,9 @@ footer iframe {
 } */
 
 @media screen and (max-width:500px){
-    /* .contenido-principal .hero div img{
+    .contenido-principal .hero div img{
         display: none;
-    } */
+    }
     .login .eslogan h1{
         font-size: var(--lg);
     }
@@ -806,9 +806,9 @@ footer iframe {
     .aviso-registro div h2{
         font-size: var(--sm);
     }
-    /* .contenedor-educacion section .contenedor-videos{
+    .contenedor-educacion section .contenedor-videos{
         grid-auto-rows: 300px;
-    } */
+    }
 }
 
 @media screen and (max-width:380px){

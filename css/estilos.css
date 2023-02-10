@@ -1,4 +1,7 @@
-/*-----Variables */
+/*-----VARIABLES */
+/*-----LISTAS*/
+/*-----Extends*/
+/*-----MIXIN*/
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,600;1,700;1,800&display=swap");
 /* font-family: 'Poppins', sans-serif; */
@@ -34,6 +37,7 @@ span {
 header nav .nav-superior {
   height: 54px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
@@ -64,13 +68,17 @@ header nav .nav-superior {
 
 header nav .nav-inferior {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   padding: 0px 20px;
   background-color: #323b42; }
   header nav .nav-inferior img {
     width: 100px; }
   header nav .nav-inferior ul {
     display: flex;
+    flex-direction: row;
+    justify-content: end;
     align-items: center;
     list-style: none;
     padding: 0;
@@ -117,8 +125,8 @@ header nav .nav-inferior {
       height: 60%;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: center; }
+      justify-content: center;
+      align-items: center; }
       .contenido-principal .hero div img {
         width: 300px;
         height: 150px;
@@ -131,6 +139,8 @@ header nav .nav-inferior {
     grid-area: bienvenidos;
     display: flex;
     flex-direction: column;
+    justify-content: start;
+    align-items: center;
     max-width: 1000px;
     margin: 0 auto; }
     .contenido-principal .bienvenidos-nosotros .bienvenidos {
@@ -198,6 +208,7 @@ header nav .nav-inferior {
   .contenedor-registro-trades form {
     display: flex;
     flex-direction: column;
+    justify-content: start;
     align-items: center; }
     .contenedor-registro-trades form section {
       width: 100%;
@@ -224,6 +235,7 @@ header nav .nav-inferior {
         .contenedor-registro-trades form section div div {
           display: flex;
           flex-direction: column;
+          justify-content: start;
           align-items: center; }
           .contenedor-registro-trades form section div div label {
             margin-bottom: 4px;
@@ -273,7 +285,7 @@ header nav .nav-inferior {
     .contenedor-educacion section .contenedor-videos > div {
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: start;
       align-items: center;
       position: relative;
       transition: 0.5s; }
@@ -310,6 +322,7 @@ header nav .nav-inferior {
 /*-----MAIN - CONTACTENOS*/
 .contactenos .encabezado-contactenos {
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   margin: 12px 0px; }
@@ -328,7 +341,7 @@ header nav .nav-inferior {
       font-size: 16px; }
 
 .contactenos form {
-  width: 40%;
+  width: 50%;
   margin: 20px auto;
   font-family: 'Quicksand', sans-serif; }
   .contactenos form div label {
@@ -342,6 +355,7 @@ header nav .nav-inferior {
 /*-----MAIN - LOGIN*/
 .login {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   height: 100px; }
@@ -380,6 +394,8 @@ header nav .nav-inferior {
       box-shadow: 3px 3px 10px #000000; }
   .login .contenedor-login .conectado {
     display: flex;
+    flex-direction: row;
+    justify-content: start;
     align-items: center;
     margin-top: 5px; }
     .login .contenedor-login .conectado input {
@@ -397,6 +413,8 @@ header nav .nav-inferior {
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
+  flex-direction: row;
+  justify-content: start;
   align-items: center; }
   .aviso-registro div {
     width: 40%;
@@ -416,6 +434,7 @@ header nav .nav-inferior {
 .registrarse {
   display: flex;
   flex-direction: column;
+  justify-content: start;
   align-items: center; }
   .registrarse h2 {
     width: 70%;
@@ -438,6 +457,7 @@ header nav .nav-inferior {
 /*-----FOOTER*/
 footer {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   background: linear-gradient(90deg, #1d1a16 0%, #323b42 50%, #787878 100%); }
@@ -466,7 +486,9 @@ footer {
     gap: 20px; }
     .contenedor-educacion section .contenedor-videos div div {
       display: flex;
-      justify-content: center; }
+      flex-direction: row;
+      justify-content: center;
+      align-items: start; }
       .contenedor-educacion section .contenedor-videos div div .caratula {
         width: 240px;
         height: 180px; }
@@ -588,7 +610,9 @@ footer {
     height: 200px; }
     .login .contenedor-login {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
       .login .contenedor-login input {
         margin-bottom: 8px; }
       .login .contenedor-login .conectado input {
