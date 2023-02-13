@@ -192,6 +192,13 @@
 .contenedor-educacion{
     width: 95%;
     margin: 0 auto;
+    h1{
+        text-align: center;
+        font-size: nth($fuentes, 1);
+        margin: 16px 0;
+        border-bottom: 1px solid $border;
+        color: $yellow-gold;
+    }
     section{
         h2{
             text-align: center;
@@ -373,7 +380,7 @@
         text-align: center;
         h2{
             color: $color-p-subtit;
-            font-size: nth($fuentes, 2);
+            font-size: nth($fuentes, 3);
             font-weight: 300;
             font-style: italic;
         }
@@ -388,7 +395,7 @@
 /*-----MAIN - REGISTRARSE*/
 .registrarse{
     @include flex (flex, column, start, center);
-    h2{
+    h1{
         width: 70%;
         font-size: nth($fuentes, 2);
         font-weight: bold;
