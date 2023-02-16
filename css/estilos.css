@@ -1,9 +1,9 @@
-/*-----VARIABLES */
-/*-----LISTAS*/
-/*-----Extends*/
-/*-----MIXIN*/
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,600;1,700;1,800&display=swap");
+.botones, header nav .nav-superior ul li, header nav .nav-inferior ul li, header nav .nav-inferior ul li a, .contenedor-registro-trades form section, .contenedor-educacion section .contenedor-videos > div, .contactenos form div button, .login .contenedor-login .boton-login, .registrarse form div button, footer div a img {
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out; }
+
 /* font-family: 'Poppins', sans-serif; */
 /*-----Reset */
 * {
@@ -23,7 +23,6 @@ body {
   padding: 8px 10px;
   font-size: 16px;
   border: none;
-  transition: 0.5s;
   margin-top: 30px; }
   .botones:hover {
     box-shadow: 3px 3px 10px #000000;
@@ -57,8 +56,7 @@ header nav .nav-superior {
       margin: 0px 10px;
       padding: 8px 10px;
       background-color: #00ADB5;
-      border-radius: 14px;
-      transition: 0.5s; }
+      border-radius: 14px; }
       header nav .nav-superior ul li:hover {
         box-shadow: 3px 3px 3px #00f2ff; }
       header nav .nav-superior ul li a {
@@ -85,14 +83,12 @@ header nav .nav-inferior {
     margin: 0; }
     header nav .nav-inferior ul li {
       margin-left: 20px;
-      padding: 10px;
-      transition: 0.5s; }
+      padding: 10px; }
       header nav .nav-inferior ul li:hover {
         border-bottom: 3px solid #d8ba8e; }
       header nav .nav-inferior ul li a {
         text-decoration: none;
         color: #787878;
-        transition: 0.5s;
         font-size: 18px; }
         header nav .nav-inferior ul li a:hover {
           color: #d8ba8e; }
@@ -215,8 +211,7 @@ header nav .nav-inferior {
       margin-top: 30px;
       border: 1px solid #9e9e9e;
       border-radius: 10px;
-      overflow: hidden;
-      transition: 0.5s; }
+      overflow: hidden; }
       .contenedor-registro-trades form section:hover {
         transform: translate(5px, -5px); }
       .contenedor-registro-trades form section h2 {
@@ -293,8 +288,7 @@ header nav .nav-inferior {
       flex-direction: column;
       justify-content: start;
       align-items: center;
-      position: relative;
-      transition: 0.5s; }
+      position: relative; }
       .contenedor-educacion section .contenedor-videos > div:hover {
         transform: scale(1.05);
         box-shadow: 8px 8px 15px #000000;
@@ -353,10 +347,8 @@ header nav .nav-inferior {
   .contactenos form div label {
     color: #787878;
     font-size: 16px; }
-  .contactenos form div button {
-    transition: 0.5s; }
-    .contactenos form div button:hover {
-      box-shadow: 4px 4px 8px #000000; }
+  .contactenos form div button:hover {
+    box-shadow: 4px 4px 8px #000000; }
 
 /*-----MAIN - LOGIN*/
 .login {
@@ -394,8 +386,7 @@ header nav .nav-inferior {
     font-size: 16px;
     font-weight: 300;
     border: none;
-    cursor: pointer;
-    transition: 0.5s; }
+    cursor: pointer; }
     .login .contenedor-login .boton-login:hover {
       box-shadow: 3px 3px 10px #000000; }
   .login .contenedor-login .conectado {
@@ -478,10 +469,8 @@ footer {
   footer div p {
     color: #d8ba8e;
     text-align: center; }
-  footer div a img {
-    transition: 0.5s; }
-    footer div a img:hover {
-      transform: scale(1.1); }
+  footer div a img:hover {
+    transform: scale(1.1); }
   footer iframe {
     margin: 10px 30px; }
 

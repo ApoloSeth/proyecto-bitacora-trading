@@ -1,4 +1,4 @@
-/*-----VARIABLES */
+// -----VARIABLES
 $color-title: #1d1a16;
 $color-p-subtit:#787878;
 $bg-subtititles:#e4e8eb;
@@ -9,26 +9,20 @@ $black: #000000;
 $color-buttom: #00ADB5;
 $bg-nav:#323b42;
 
-/*-----LISTAS*/
+// -----LISTAS
 $fuentes:
     26px,
     22px,
     18px,
     16px;
 
-/*-----Extends*/
-// %margenes-pincipales{
-//     margin-top: 12px;
-//     margin-right: 12px;
-//     margin-bottom: 20px;
-//     margin-left: 16px;
-// };
+// -----EXTENDS
 %transitions{
 transition-duration: 0.5s;
 transition-timing-function: ease-out;
 };
 
-/*-----MIXIN*/
+// -----MIXIN
 @mixin flex ($flex, $direction, $justify, $aling){
     display: $flex;
     flex-direction: $direction;
