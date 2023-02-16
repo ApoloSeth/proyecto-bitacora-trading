@@ -133,7 +133,7 @@
             border: 1px solid $border;
             border-radius: 10px;
             overflow: hidden;
-            transition: 0.5s;
+            @extend %transitions;
             &:hover{
                 transform: translate(5px,-5px);
             }
@@ -222,7 +222,7 @@
             > div{
                 @include flex (flex, column, start, center);
                 position: relative;
-                transition: 0.5s;
+                @extend %transitions;
                 &:hover{
                     transform: scale(1.05);
                     box-shadow: 8px 8px 15px $black;
@@ -299,7 +299,7 @@
                 font-size: nth($fuentes, 4);  
             }
             button{
-                transition: 0.5s;
+                @extend %transitions;
                 &:hover{
                     box-shadow: 4px 4px 8px $black;
                 }
@@ -347,7 +347,7 @@
             font-weight: 300;
             border: none;
             cursor: pointer;
-            transition: 0.5s;
+            @extend %transitions;
             &:hover{
                 box-shadow: 3px 3px 10px $black;
             }
@@ -414,6 +414,7 @@
                 color: $color-p-subtit;
             }
             button{
+                @extend %transitions;
                 &:hover{
                     box-shadow: 4px 4px 8px $black;
                 }

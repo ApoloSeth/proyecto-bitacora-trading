@@ -21,7 +21,7 @@ footer{
         }
         a{
             img{
-                transition: 0.5s;
+                @extend %transitions;
                 &:hover{
                     transform: scale(1.1);
                 }

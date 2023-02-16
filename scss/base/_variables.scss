@@ -17,11 +17,15 @@ $fuentes:
     16px;
 
 /*-----Extends*/
-%margenes-pincipales{
-    margin-top: 12px;
-    margin-right: 12px;
-    margin-bottom: 20px;
-    margin-left: 16px;
+// %margenes-pincipales{
+//     margin-top: 12px;
+//     margin-right: 12px;
+//     margin-bottom: 20px;
+//     margin-left: 16px;
+// };
+%transitions{
+transition-duration: 0.5s;
+transition-timing-function: ease-out;
 };
 
 /*-----MIXIN*/
