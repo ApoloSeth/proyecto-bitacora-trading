@@ -21,7 +21,7 @@ body {
     padding: 8px 10px;
     font-size: nth($fuentes, 4);
     border: none;
-    transition: 0.5s;
+    @extend %transitions;
     margin-top: 30px;
     &:hover{
         box-shadow: 3px 3px 10px $black;

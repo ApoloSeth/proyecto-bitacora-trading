@@ -23,7 +23,7 @@ header{
                     padding: 8px 10px;
                     background-color: $color-buttom;
                     border-radius: 14px;
-                    transition: 0.5s;
+                    @extend %transitions;
                     &:hover{
                         box-shadow: 3px 3px 3px #00f2ff;
                     }
@@ -50,14 +50,14 @@ header{
                 li{
                     margin-left: 20px;
                     padding: 10px;
-                    transition: 0.5s;
+                    @extend %transitions;
                     &:hover{
                         border-bottom: 3px solid $yellow-gold;
                     }
                     a{
                         text-decoration: none;
                         color: $color-p-subtit;
-                        transition: 0.5s;
+                        @extend %transitions;
                         font-size: nth($fuentes, 3);
                         &:hover{
                             color: $yellow-gold;
