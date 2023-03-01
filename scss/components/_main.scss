@@ -25,9 +25,10 @@
             h1{
             width: auto;
             color: $color-p-subtit;
-            background-color:rgba(0, 0, 0, 0.589);
+            background-color:rgba(0, 0, 0, 0.712);
             text-align: center;
             font-size: nth($fuentes, 1);
+            font-weight: 700;
             padding: 8px;
             }
             a{
@@ -293,6 +294,7 @@
                 @extend %transitions;
                 background-color: $color-buttom;
                 border: none;
+                border-radius: 0;
                 &:hover{
                     box-shadow: 4px 4px 8px $black;
                     background-color: $color-buttom;
@@ -411,6 +413,7 @@
                 @extend %transitions;
                 background-color: $color-buttom;
                 border: none;
+                border-radius: 0;
                 &:hover{
                     box-shadow: 4px 4px 8px $black;
                     background-color: $color-buttom;

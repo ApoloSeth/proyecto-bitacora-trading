@@ -68,9 +68,10 @@ header nav {
       .contenido-principal .hero div h1 {
         width: auto;
         color: #787878;
-        background-color: rgba(0, 0, 0, 0.589);
+        background-color: rgba(0, 0, 0, 0.712);
         text-align: center;
         font-size: 26px;
+        font-weight: 700;
         padding: 8px; }
       .contenido-principal .hero div a {
         text-decoration: none;
@@ -292,7 +293,8 @@ header nav {
     font-size: 16px; }
   .contactenos form div button {
     background-color: #00ADB5;
-    border: none; }
+    border: none;
+    border-radius: 0; }
     .contactenos form div button:hover {
       box-shadow: 4px 4px 8px #000000;
       background-color: #00ADB5;
@@ -397,7 +399,8 @@ header nav {
       color: #787878; }
     .registrarse form div button {
       background-color: #00ADB5;
-      border: none; }
+      border: none;
+      border-radius: 0; }
       .registrarse form div button:hover {
         box-shadow: 4px 4px 8px #000000;
         background-color: #00ADB5;
@@ -603,6 +606,8 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 70px; }
+  .contactenos form {
+    width: 90%; }
   .registrarse h1 {
     width: 90%; }
   .registrarse form {
@@ -624,9 +629,7 @@ footer {
 
 @media screen and (max-width: 400px) {
   .contenedor-educacion section .contenedor-videos {
-    grid-template-columns: 300px; }
-  .contactenos form {
-    width: 90%; } }
+    grid-template-columns: 300px; } }
 
 @media screen and (max-width: 380px) {
   header nav .nav-superior {
