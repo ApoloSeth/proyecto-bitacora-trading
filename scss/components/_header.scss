@@ -1,19 +1,27 @@
 /*-----HEADER*/
 header{
     nav{
-       
+        background-color: $bg-nav;
         div{
             div{
                 ul{
                     li{
+                        
                         a{
+                            @extend %transitions;
                             &:hover{
-                                color: $yellow-gold;
                                 border-bottom: 1.5px solid $yellow-gold;
                             }
                         }
-                        &:hover{
-                            color: $yellow-gold;
+                        .dropdown-menu{
+                            background-color: $bg-nav;
+                            li{
+                                .dropdown-item{
+                                    &:hover{
+                                        background-color: $bg-nav
+                                    }
+                                }
+                            }
                         }
                     }
                 }

@@ -18,14 +18,14 @@ body {
     height: 35px;
     background-color: $color-buttom;
     color: $white;
-    padding: 8px 10px;
+    padding: 4px 10px;
     font-size: nth($fuentes, 4);
     border: none;
     @extend %transitions;
     margin-top: 30px;
     &:hover{
         box-shadow: 3px 3px 10px $black;
-        border-radius: 14px;
+        color: $black;
     }
 }
 
