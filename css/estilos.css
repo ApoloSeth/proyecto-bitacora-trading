@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,600;1,700;1,800&display=swap");
-.botones, header nav .nav-superior ul li, header nav .nav-inferior ul li, header nav .nav-inferior ul li a, .contenedor-registro-trades form section, .contenedor-educacion section .contenedor-videos > div, .contactenos form div button, .login .contenedor-login .boton-login, .registrarse form div button, footer div a img {
+.botones, .contenedor-registro-trades form section, .contenedor-educacion section .contenedor-videos > div, .contactenos form div button, .login .contenedor-login .boton-login, .registrarse form div button, footer div a img {
   transition-duration: 0.5s;
   transition-timing-function: ease-out; }
 
@@ -33,65 +33,12 @@ span {
   font-weight: 700; }
 
 /*-----HEADER*/
-header nav .nav-superior {
-  height: 54px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #000000; }
-  header nav .nav-superior p {
-    font-size: 18px;
-    font-weight: 700;
-    font-style: italic;
-    color: #d8ba8e;
-    margin-bottom: 0; }
-  header nav .nav-superior ul {
-    display: flex;
-    padding: 0;
-    margin: 0; }
-    header nav .nav-superior ul li {
-      list-style: none;
-      margin: 0px 10px;
-      padding: 8px 10px;
-      background-color: #00ADB5;
-      border-radius: 14px; }
-      header nav .nav-superior ul li:hover {
-        box-shadow: 3px 3px 3px #00f2ff; }
-      header nav .nav-superior ul li a {
-        text-decoration: none;
-        color: #ffffff;
-        font-size: 16px; }
+header nav div div ul li a:hover {
+  color: #d8ba8e;
+  border-bottom: 1.5px solid #d8ba8e; }
 
-header nav .nav-inferior {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px 20px;
-  background-color: #323b42; }
-  header nav .nav-inferior img {
-    width: 100px; }
-  header nav .nav-inferior ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    align-items: center;
-    list-style: none;
-    padding: 0;
-    margin: 0; }
-    header nav .nav-inferior ul li {
-      margin-left: 20px;
-      padding: 10px; }
-      header nav .nav-inferior ul li:hover {
-        border-bottom: 3px solid #d8ba8e; }
-      header nav .nav-inferior ul li a {
-        text-decoration: none;
-        color: #787878;
-        font-size: 18px; }
-        header nav .nav-inferior ul li a:hover {
-          color: #d8ba8e; }
+header nav div div ul li:hover {
+  color: #d8ba8e; }
 
 /*-----MAIN-INDEX*/
 .contenido-principal {
@@ -101,21 +48,14 @@ header nav .nav-inferior {
   grid-template-areas: "hero hero" "bienvenidos noticias"; }
   .contenido-principal .hero {
     grid-area: hero;
-    background-image: url("../img/hero_div3.jpg");
+    background-image: url("../../img/hero.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center; }
-    .contenido-principal .hero h1 {
-      width: auto;
-      color: #787878;
-      background-color: rgba(0, 0, 0, 0.589);
-      text-align: center;
-      font-size: 26px;
-      margin-left: 16px; }
     .contenido-principal .hero div {
       width: 50%;
       height: 60%;
@@ -123,11 +63,14 @@ header nav .nav-inferior {
       flex-direction: column;
       justify-content: center;
       align-items: center; }
-      .contenido-principal .hero div img {
-        width: 300px;
-        height: 150px;
-        opacity: 80%;
-        object-fit: cover; }
+      .contenido-principal .hero div h1 {
+        width: auto;
+        color: #787878;
+        background-color: rgba(0, 0, 0, 0.589);
+        text-align: center;
+        font-size: 26px;
+        margin-left: 16px;
+        padding: 8px; }
       .contenido-principal .hero div a {
         text-decoration: none;
         display: inline-block; }
